@@ -1,6 +1,6 @@
 {
     "name": "fanlibang/zmxysdk",
-    "description": "芝麻信用官方SDK",
+    "description": "芝麻信用官方SDK--咖购",
     "keywords": ["zmxysdk"],
     "license": "MIT",
     "require-dev": {
