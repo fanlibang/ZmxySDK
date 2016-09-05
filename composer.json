@@ -1,0 +1,22 @@
+{
+    "name": "fanlibang/zmxysdk",
+    "description": "芝麻信用官方SDK",
+    "keywords": ["zmxysdk"],
+    "license": "MIT",
+    "require-dev": {
+    },
+    "authors": [
+        {
+            "name": "fanlibang",
+            "email": "wuxian@fanlibang.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {"zmxysdk\\": "src/"},
+        "files": ["src/ZmopSdk.php"]
+    }
+}
