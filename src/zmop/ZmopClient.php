@@ -95,7 +95,7 @@ class ZmopClient {
 			return false;
 		}
 
-        $bizResponseSign = $respObject->biz_response_sign;
+        $bizResponseSign = isset($respObject->biz_response_sign) ? $respObject->biz_response_sign : '';
         if($bizResponseSign != null){
             $verifyResult = RSAUtil::verify($biz_response, $bizResponseSign, $this->zhiMaPublicKeyFilePath);
             if($verifyResult == false){
