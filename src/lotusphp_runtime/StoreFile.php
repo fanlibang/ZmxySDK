@@ -11,12 +11,15 @@ class LtStoreFile implements LtStore
 		 * 目录不存在和是否可写在调用add是测试
 		 * @todo detect dir is exists and writable
 		 */
-		if (null == $this->storeDir)
-		{
-			$this->storeDir = self::$defaultStoreDir;
-		}
-		$this->storeDir = str_replace('\\', '/', $this->storeDir);
-		$this->storeDir = rtrim($this->storeDir, '\\/') . '/';
+		//if (null == $this->storeDir)
+		//{
+		//	$this->storeDir = self::$defaultStoreDir;
+		//}
+		//$this->storeDir = str_replace('\\', '/', $this->storeDir);
+		//$this->storeDir = rtrim($this->storeDir, '\\/') . '/';
+		$file = dirname(__FILE__);
+		$row = explode('/vendor', $file);
+		$this->storeDir = $row['0'] . '/storage/logs/LtStoreFile/';
 	}
 
 	/**
